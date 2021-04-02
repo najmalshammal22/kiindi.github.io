@@ -1177,17 +1177,30 @@ end
 end
 end
 end
+if not redis:get(nk..'name_me'..msg.chat_id_) then
 if msg.text then  
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_}, function(arg,data) 
 if redis:get(nk.."chencher"..msg.sender_user_id_) then 
 if redis:get(nk.."chencher"..msg.sender_user_id_) ~= data.first_name_ then 
-nkn = '['..(redis:get(nk.."chencher"..msg.sender_user_id_) or '')..']'
-nkm = '['..data.first_name_..']'
-sendMsg(msg.chat_id_,msg.id_,nk[math.random(#nk)])
+rsalem = '['..(redis:get(nk.."chencher"..msg.sender_user_id_) or '')..']'
+lsalem = '['..data.first_name_..']'
+local salem ={ 
+'\n شو غيرت اسمك  يا حلو 😹🌚',
+'\n شو هالاسم '..lsalem.. ' \n رجعه ؏ قديم \n '..rsalem..'',
+'\n  ها ها شو غيرت اسمك 🤔😹',
+'\n شو غيرت اسمك شو نصبت على واحد جديد 😹😹🌚',
+'\n شو غيرت اسمك شو تقاتلت مع الحب ؟😹🌞',
+'\n مو كان اسمك   '..rsalem..'  ليش غيرته 🤔🌚',
+'\n لك تعال تعال مو كان اسمك '..rsalem..' ولا انا غلطان 🤔🌚',
+'\n هذا كان اسمه '..rsalem..' لقطته بالرادار 😹🌞',
+'\n شو غيرت اسمك شو القصة ؟؟ 🤔🌞'
+}
+sendMsg(msg.chat_id_,msg.id_,salem[math.random(#salem)])
 end  
 end
 redis:set(nk.."chencher"..msg.sender_user_id_, data.first_name_) 
 end,nil) 
+end
 end
 end
 return {
