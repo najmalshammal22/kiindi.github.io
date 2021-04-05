@@ -2,7 +2,7 @@ local function Zhrfa(msg,MsgText)
 if msg.type ~= "pv" then
 if MsgText[1] == "زخرفه" then
 redis:setex(nk..":ZhrfNow:"..msg.sender_user_id_,500,true)
-sendMsg(msg.chat_id_,msg.id_,"| حسننا , الان يمكنك ارسال الاسم ولبعض الرموز المميزه اكتب رموز")    
+sendMsg(msg.chat_id_,msg.id_,"حسننا , الان يمكنك ارسال الاسم ")    
 return false
 end
 
