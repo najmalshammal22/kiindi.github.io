@@ -20,7 +20,7 @@ $Dev = array("$sudo","00000");// ايديك1862146644
 $Devd = "$sudo";
 $tbbots = kiindibot;najmalshammal86BOT
  
-$channel = "TH3NK";//Godlovers7
+$channe=/Godlovers7
 $chinnl = "$channel";
 $DevUser = "@$buy"; // 
 $Devch = "@$buy"; //  
@@ -29,7 +29,7 @@ $Userbot = "$tbbots"; // 
 define('API_KEY',$token);
 echo "setWebhook ~> <a href=\"https://api.telegram.org/bot".API_KEY."/setwebhook?url=".$_SERVER['SERVER_NAME']."".$_SERVER['SCRIPT_NAME']."\">https://api.telegram.org/bot".API_KEY."/setwebhook?url=".$_SERVER['SERVER_NAME']."".$_SERVER['SCRIPT_NAME']."</a>";
 function bot($method,$datas=[]){
-    $url = "https://api.telegram.org/bot".API_KEY."/".$method;
+    $url = "https://api.telegram.org/bot".API_KEY."/najmalshammal86BOT".$method;
 $ch = curl_init();
     curl_setopt($ch,CURLOPT_URL,$url);
     curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
@@ -159,8 +159,8 @@ bot('sendmessage',[
 ⌯⁞ آهہ‌‏لآ عزيزي آلمـطـور !
 ⌯⁞ آنتهہ‌‏ آلمـطـور آلآسـآسـي هہ‌‏نآ 
 ────────────────
-⌯⁞ CH ⋙ **[ᴛᴇᴀᴍ ɴɪᴢᴋ](https://t.me/TH1BS)** 💥
-⌯⁞ CH ⋙ **[Ͳᴇᴀᴍ ʏᴇᴍᴇɴ](t.me/Tmsmix)** 🇾🇪
+⌯⁞ CH ⋙ **[ᴛᴇᴀᴍ ɴɪᴢᴋ](https://t.me/najmalshammal)** 💥
+⌯⁞ CH ⋙ **[Ͳᴇᴀᴍ ʏᴇᴍᴇɴ](t.me/najmalshammal86BOT)** 🇾🇪
 ────────────
 ⌯⁞ تسـتطـيع‌‏ آلتحكم بكل آلآوآمـر آلمـمـوجودهہ‌‏ بآلكيبورد
 ⌯⁞ فقط آضـغط ع آلآمـر آلذي تريد تنفيذهہ‌‏",
